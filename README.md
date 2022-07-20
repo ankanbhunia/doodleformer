@@ -69,7 +69,7 @@ Next, download the processed Creative Birds and Creative Creatures datasets from
 To process the raw data from the scratch, check the scripts in `data_process.py`.
 
 
-## [Stage-1] PL-Net Training
+### [Stage-1] PL-Net Training
 
 The first stage, PL-Net, takes the initial stroke points as the conditional input and learns to return the bounding boxes corresponding to each body part (coarse structure of the sketch) to be drawn. To train the PL-Net, run the following command:
 
@@ -78,7 +78,7 @@ python train.py --model plnet
 ```
 
 
-## [Stage-2] PS-Net Training
+### [Stage-2] PS-Net Training
 
 The second stage, PS-Net, takes the predicted box locations along with C as inputs and generates the final sketch image. To train the PS-Net, run the following command:
 

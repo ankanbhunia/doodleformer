@@ -64,15 +64,26 @@ Please see ```INSTALL.md``` for installing required libraries. First, create the
   pip install -r requirements.txt
 ```
 
-Next, download the processed Creative Birds and Creative Creatures datasets from the GoogleDrive: https://drive.google.com/drive/folders/14ZywlSE-khagmSz23KKFbLCQLoMOxPzl?usp=sharing and unzip the folders under the directory `creative_sketch_generation/data/`.
+Next, download the processed Creative Birds and Creative Creatures datasets from the GoogleDrive: https://drive.google.com/drive/folders/14ZywlSE-khagmSz23KKFbLCQLoMOxPzl?usp=sharing and unzip the folders under the directory `../data/`.
 
 To process the raw data from the scratch, check the scripts in `data_process.py`.
 
 
-To start training the model: run
+## [Stage-1] PL-Net Training
+
+The first stage, PL-Net, takes the initial stroke points as the conditional input and learns to return the bounding boxes corresponding to each body part (coarse structure of the sketch) to be drawn. To train the PL-Net, run the following command:
 
 ```
-python train.py
+python train.py --model plnet
+```
+
+
+## [Stage-2] PS-Net Training
+
+The second stage, PS-Net, takes the predicted box locations along with C as inputs and generates the final sketch image. To train the PS-Net, run the following command:
+
+```
+python train.py --model psnet
 ```
 
 If you want to use ```wandb``` please install it and change your auth_key in the ```train.py``` file (ln:4). 

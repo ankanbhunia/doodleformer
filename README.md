@@ -14,7 +14,7 @@
 
  
  <p align="center">
-<img src=Figures/mainfigure.jpg width="500"/>
+<img src=qual.jpg width="500"/>
 </p>
 
 <!-- 

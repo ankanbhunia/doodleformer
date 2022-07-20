@@ -74,7 +74,7 @@ To process the raw data from the scratch, check the scripts in `data_process.py`
 The first stage, PL-Net, takes the initial stroke points as the conditional input and learns to return the bounding boxes corresponding to each body part (coarse structure of the sketch) to be drawn. To train the PL-Net, run the following command:
 
 ```
-python train.py --model plnet
+python train.py --model plnet --data [DATASET]
 ```
 
 
@@ -83,11 +83,15 @@ python train.py --model plnet
 The second stage, PS-Net, takes the predicted box locations along with C as inputs and generates the final sketch image. To train the PS-Net, run the following command:
 
 ```
-python train.py --model psnet
+python train.py --model psnet --data [DATASET]
 ```
 
 If you want to use ```wandb``` please install it and change your auth_key in the ```train.py``` file (ln:4). 
 
 You can change different parameters in the ```params.py``` file.
 
+### Inference
 
+TBD
+
+```

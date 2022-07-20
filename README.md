@@ -1,4 +1,4 @@
-# :zap: DoodleFormer: Creative Sketch Drawing with Transformers  [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ankanbhunia/DoodleFormer/blob/main/demo.ipynb)
+# :zap: DoodleFormer: Creative Sketch Drawing with Transformers (ECCV'22)
 <!-- 
 [arXiv](https://arxiv.org/abs/2112.03258) | [paper](https://arxiv.org/pdf/2112.03258) | [demo](https://colab.research.google.com/github/ankanbhunia/DoodleFormer/blob/main/demo.ipynb) | [BibTeX](#bibtex)
   -->

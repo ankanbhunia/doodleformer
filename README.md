@@ -1,4 +1,4 @@
-# :zap: DoodleFormer: Creative Sketch Drawing with Transformers (ECCV'22)
+# :zap: DoodleFormer: Creative Sketch Drawing with Transformers
 <!-- 
 [arXiv](https://arxiv.org/abs/2112.03258) | [paper](https://arxiv.org/pdf/2112.03258) | [demo](https://colab.research.google.com/github/ankanbhunia/DoodleFormer/blob/main/demo.ipynb) | [BibTeX](#bibtex)
   -->

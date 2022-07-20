@@ -34,6 +34,18 @@
 > **Abstract:** 
 >*Creative sketching or doodling is an expressive activity, where imaginative and previously unseen depictions of everyday visual objects are drawn. Creative sketch image generation is a challenging vision problem, where the task is to generate diverse, yet realistic creative sketches possessing the unseen composition of the visual-world objects. Here, we propose a novel coarse-to-fine two-stage framework, DoodleFormer, that decomposes the creative sketch generation problem into the creation of coarse sketch composition followed by the incorporation of fine-details in the sketch. We introduce graph-aware transformer encoders that effectively capture global dynamic as well as local static structural relations among different body parts. To ensure diversity of the generated creative sketches, we introduce a probabilistic coarse sketch decoder that explicitly models the variations of each sketch body part to be drawn. Experiments are performed on two creative sketch datasets: Creative Birds and Creative Creatures. Our qualitative, quantitative and human-based evaluations show that DoodleFormer outperforms the state-of-the-art on both datasets, yielding realistic and diverse creative sketches. On Creative Creatures, DoodleFormer achieves an absolute gain of 25 in terms of Fr\`echet inception distance (FID) over the state-of-the-art. We also demonstrate the effectiveness of DoodleFormer for related applications of text to creative sketch generation and sketch completion..* 
 
+## Citation
+
+If you use the code for your research, please cite our paper:
+
+```
+@article{bhunia2021doodleformer,
+  title={Doodleformer: Creative sketch drawing with transformers},
+  author={Bhunia, Ankan Kumar and Khan, Salman and Cholakkal, Hisham and Anwer, Rao Muhammad and Khan, Fahad Shahbaz and Laaksonen, Jorma and Felsberg, Michael},
+  journal={ECCV},
+  year={2022}
+}
+```
 
 ## Software environment
 
@@ -100,17 +112,4 @@ the same text as in the style examples to generate handwritten images.
 
 <img src="Figures/recons2.jpg" >
  -->
-## Citation
 
-If you use the code for your research, please cite our paper:
-
-```
-@InProceedings{Bhunia_2021_ICCV,
-    author    = {Bhunia, Ankan Kumar and Khan, Salman and Cholakkal, Hisham and Anwer, Rao Muhammad and Khan, Fahad Shahbaz and Shah, Mubarak},
-    title     = {Handwriting Transformers},
-    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
-    month     = {October},
-    year      = {2021},
-    pages     = {1086-1094}
-}
-```

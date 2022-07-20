@@ -54,17 +54,20 @@ If you use the code for your research, please cite our paper:
 
 ## Setup & Training
 
-Please see ```INSTALL.md``` for installing required libraries. You can change the content in the file ```mytext.txt``` to visualize generated handwriting while training.   
-
-
-Download Dataset files and models from https://drive.google.com/file/d/16g9zgysQnWk7-353_tMig92KsZsrcM6k/view?usp=sharing and unzip inside ```files``` folder. In short, run following lines in a bash terminal. 
+Please see ```INSTALL.md``` for installing required libraries. First, create the enviroment with Anaconda. Install Pytorch and the other packages listed in requirements.txt. The code is tested with PyTorch 1.3.1 and CUDA 10.0:
 
 ```bash
-git clone https://github.com/ankanbhunia/Handwriting-Transformers
-cd Handwriting-Transformers
-pip install --upgrade --no-cache-dir gdown
-gdown --id 16g9zgysQnWk7-353_tMig92KsZsrcM6k && unzip files.zip && rm files.zip
+  git clone https://github.com/ankanbhunia/doodleformer
+  conda create -n doodler python=3.7
+  conda activate doodleformer
+  conda install pytorch==1.3.1 -c pytorch
+  pip install -r requirements.txt
 ```
+
+Next, download the processed Creative Birds and Creative Creatures datasets from the GoogleDrive: https://drive.google.com/drive/folders/14ZywlSE-khagmSz23KKFbLCQLoMOxPzl?usp=sharing and unzip the folders under the directory `creative_sketch_generation/data/`.
+
+To process the raw data from the scratch, check the scripts in `data_process.py`.
+
 
 To start training the model: run
 
@@ -76,40 +79,4 @@ If you want to use ```wandb``` please install it and change your auth_key in the
 
 You can change different parameters in the ```params.py``` file.
 
-You can train the model in any custom dataset other than IAM and CVL. The process involves creating a ```dataset_name.pickle``` file and placing it inside ```files``` folder. The structure of ```dataset_name.pickle``` is a simple python dictionary. 
-
-```python
-{
-'train': [{writer_1:[{'img': <PIL.IMAGE>, 'label':<str_label>},...]}, {writer_2:[{'img': <PIL.IMAGE>, 'label':<str_label>},...]},...], 
-'test': [{writer_3:[{'img': <PIL.IMAGE>, 'label':<str_label>},...]}, {writer_4:[{'img': <PIL.IMAGE>, 'label':<str_label>},...]},...], 
-}
-```
-
-## Handwriting synthesis results
-
-Please check the ```results``` folder in the repository to see more qualitative analysis. Also, please check out colab demo to try with your own custom text and writing style [![Colab Notebook](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ankanbhunia/Handwriting-Transformers/blob/main/demo.ipynb)
-
- <p align="center">
-<img src=Figures/paperresult.jpg width="1000"/>
-</p>
-
- <p align="center">
-<img src=Figures/qualresult.jpg width="1000"/>
-</p>
-
-
-
-## Handwriting reconstruction results
- Reconstruction results using the proposed HWT in comparison to GANwriting and Davis et al. We use
-the same text as in the style examples to generate handwritten images.
-
- <p align="center">
-<img src=Figures/recons2.jpg width="600"/>
-</p>
-
-<!-- 
-<img src="Figures/result.jpg" >
-
-<img src="Figures/recons2.jpg" >
- -->
 

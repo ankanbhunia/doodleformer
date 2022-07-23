@@ -60,7 +60,7 @@ Please see ```INSTALL.md``` for installing required libraries. First, create the
 
 ```bash
   git clone https://github.com/ankanbhunia/doodleformer
-  conda create -n doodler python=3.7
+  conda create -n doodleformer python=3.7
   conda activate doodleformer
   conda install pytorch==1.9.1 torchvision==0.10.1 torchaudio==0.9.1 -c pytorch
   pip install -r requirements.txt

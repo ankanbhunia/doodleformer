@@ -48,7 +48,7 @@ If you use the code for your research, please cite our paper:
 ```
 
  <p align="center">
-<img src="figures/mainfig (1).jpg" />
+<img src="figures/mainfig (1).jpg" width="800"/>
 </p>
 
 ## Software environment

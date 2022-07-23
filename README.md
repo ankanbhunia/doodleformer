@@ -54,17 +54,17 @@ If you use the code for your research, please cite our paper:
 
 ## Setup & Training
 
-Please see ```INSTALL.md``` for installing required libraries. First, create the enviroment with Anaconda. Install Pytorch and the other packages listed in requirements.txt. The code is tested with PyTorch 1.3.1 and CUDA 10.0:
+Please see ```INSTALL.md``` for installing required libraries. First, create the enviroment with Anaconda. Install Pytorch and the other packages listed in requirements.txt. The code is tested with PyTorch 1.9 and CUDA 10.2:
 
 ```bash
   git clone https://github.com/ankanbhunia/doodleformer
   conda create -n doodler python=3.7
   conda activate doodleformer
-  conda install pytorch==1.4 -c pytorch
+  conda install pytorch==1.9.1 torchvision==0.10.1 torchaudio==0.9.1 -c pytorch
   pip install -r requirements.txt
 ```
 
-Next, download the processed Creative Birds and Creative Creatures datasets from the GoogleDrive: https://drive.google.com/drive/folders/14ZywlSE-khagmSz23KKFbLCQLoMOxPzl?usp=sharing and unzip the folders under the directory `../data/`.
+Next, download the processed Creative Birds and Creative Creatures datasets from the GoogleDrive: https://drive.google.com/drive/folders/14ZywlSE-khagmSz23KKFbLCQLoMOxPzl?usp=sharing and unzip the folders under the directory `data/`. You can also visit the dataset site for more information https://songweige.github.io/projects/creative_sketech_generation/home.html
 
 To process the raw data from the scratch, check the scripts in `data_process.py`.
 

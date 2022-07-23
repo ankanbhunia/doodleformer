@@ -75,14 +75,14 @@ To process the raw data from the scratch, check the scripts in `data_process.py`
 The first stage, PL-Net, takes the initial stroke points as the conditional input and learns to return the bounding boxes corresponding to each body part (coarse structure of the sketch) to be drawn. To train the PL-Net, run the following command:
 
 ```
-python PL-Net.py --dataset='sketch-bird'
-                 --data_path='data/doodledata.npy'
-                 --exp_name='ztolayout'
-                 --batch_size=32
-                 --beta=1
-                 --model_dir='models'
-                 --save_per_epoch=20
-                 --vis_per_step=200
+python PL-Net.py --dataset='sketch-bird' \
+                 --data_path='data/doodledata.npy' \
+                 --exp_name='ztolayout' \
+                 --batch_size=32 \
+                 --beta=1 \
+                 --model_dir='models' \
+                 --save_per_epoch=20 \
+                 --vis_per_step=200 \
                  --learning_rate=0.0001
                  
 ```
@@ -93,7 +93,16 @@ python PL-Net.py --dataset='sketch-bird'
 The second stage, PS-Net, takes the predicted box locations along with C as inputs and generates the final sketch image. To train the PS-Net, run the following command:
 
 ```
-python train.py --model psnet --data [DATASET]
+python PS-Net.py --dataset='sketch-bird' \
+                 --data_path='data/doodledata.npy' \
+                 --exp_name='layouttosketch' \
+                 --batch_size=32 \
+                 --beta=1 \
+                 --model_dir='models' \
+                 --save_per_epoch=20 \
+                 --vis_per_step=200 \
+                 --learning_rate=0.0001
+                 
 ```
 
 If you want to use ```wandb``` please install it and change your auth_key in the ```train.py``` file (ln:4). 

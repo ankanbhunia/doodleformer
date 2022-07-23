@@ -683,7 +683,7 @@ class context_aware_generator(nn.Module):
         # 128x128
         x = self.res5(x, w, bbox)
         # to RGB
-        x = self.final(x).max
+        x = self.final(x)
 
         return x#torch.max(initial_stroke, x)
 

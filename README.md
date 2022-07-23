@@ -83,8 +83,7 @@ python PL-Net.py --dataset='sketch-bird' \
                  --model_dir='models' \
                  --save_per_epoch=20 \
                  --vis_per_step=200 \
-                 --learning_rate=0.0001
-                 
+                 --learning_rate=0.0001                
 ```
 
 
@@ -102,8 +101,6 @@ python PS-Net.py --dataset='sketch-bird' \
                  --total_epoch=200 \
                  --d_lr=0.0001 \
                  --g_lr=0.0001 \
-            
-                 
 ```
 
 ### Inference (Coming Soon)

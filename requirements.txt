@@ -1,0 +1,9 @@
+bounding-box==0.1.3
+cairocffi==1.3.0
+certifi==2021.10.8
+lmdb==1.0.0
+pycocotools==2.0.2
+torch==1.9.0+cu111
+tqdm==4.61.1
+visdom==0.1.8.9
+wandb==0.12.6

@@ -47,6 +47,10 @@ If you use the code for your research, please cite our paper:
 }
 ```
 
+ <p align="center">
+<img src="figures/mainfig (1).jpg" />
+</p>
+
 ## Software environment
 
 - Python 3.7

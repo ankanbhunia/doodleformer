@@ -97,19 +97,14 @@ python PS-Net.py --dataset='sketch-bird' \
                  --data_path='data/doodledata.npy' \
                  --exp_name='layouttosketch' \
                  --batch_size=32 \
-                 --beta=1 \
                  --model_dir='models' \
-                 --save_per_epoch=20 \
-                 --vis_per_step=200 \
-                 --learning_rate=0.0001
+                 --learning_rate=0.0001 \
+                 --total_epoch=200 \
+                 --d_lr=0.0001 \
+                 --g_lr=0.0001 \
+            
                  
 ```
 
-If you want to use ```wandb``` please install it and change your auth_key in the ```train.py``` file (ln:4). 
-
-You can change different parameters in the ```params.py``` file.
-
-### Inference
-
-TBD
+### Inference (Coming Soon)
 

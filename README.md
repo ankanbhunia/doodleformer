@@ -47,9 +47,7 @@ If you use the code for your research, please cite our paper:
 }
 ```
 
- <p align="center">
-<img src="figures/mainfig (1).jpg" width="800"/>
-</p>
+
 
 ## Software environment
 
@@ -72,7 +70,9 @@ Next, download the processed Creative Birds and Creative Creatures datasets from
 
 To process the raw data from the scratch, check the scripts in `data_process.py`.
 
-
+ <p align="center">
+<img src="figures/mainfig (1).jpg" width="900"/>
+</p>
 
 ### [Stage-1] PL-Net Training
 

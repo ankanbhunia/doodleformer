@@ -4,7 +4,7 @@
   -->
  <p align='center'>
   <b>
-    <a href="https://ankanbhunia.github.io/doodleformer/">ArXiv</a>
+    <a href="https://ankanbhunia.github.io/doodleformer/">Project</a>
     |
     <a href="https://arxiv.org/abs/2112.03258">ArXiv</a>
     | 

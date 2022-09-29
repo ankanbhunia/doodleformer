@@ -9,6 +9,8 @@
     <a href="https://arxiv.org/abs/2112.03258">ArXiv</a>
     | 
     <a href="https://arxiv.org/pdf/2112.03258">Paper</a>
+    |
+    <a href="https://raw.githubusercontent.com/ankanbhunia/doodleformer/main/figures/poster.pdf">Poster</a>
     | 
     <a href="https://colab.research.google.com/github/ankanbhunia/DoodleFormer/blob/main/demo.ipynb">Demo</a>
   </b>
